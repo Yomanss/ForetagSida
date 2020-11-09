@@ -7,13 +7,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script src="foretag.js"></script>
     <title>Ahmeds Mäklare AB</title>
   </head>
   <body>
     <header>
-      <h1>Ahmed Mäklare AB</h1>
-      <nav>
+      <h1>Zeron Bostad</h1>
+      <nav class="menu">
         <ul>
           <li>
             <a href="#">Hemsida</a>
@@ -31,12 +36,24 @@
       </nav>
     </header>
     <main>
-      <article id="popo">
-        <p></p>
-      </article>
+      <div class="slideshow">
+        <img
+          class="slideImg"
+          src="annons1.jpg"
+          alt="Bild av insidan av en lägenhet, lägenheten är tom och har vita vägar"
+        />
+        <img class="slideImg" src="annons2.jpg" alt="Bild av lägenhet" />
+        <img class="slideImg" src="annons3.jpg" alt="Bild av hus" />
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">
+          &#10094;
+        </button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">
+          &#10095;
+        </button>
+      </div>
       <article id="valkommen">
         <p>
-          HEJ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
           consequuntur eius rerum inventore fugiat. Reprehenderit ratione vel
           totam consectetur aliquam vero eos illum. Repellendus architecto earum
           illo beatae soluta deleniti hic animi non neque suscipit recusandae
@@ -56,11 +73,6 @@
           voluptatum hic ad odit dignissimos dolor minus incidunt enim quasi,
           odio sequi possimus. Eius alias, eos omnis quidem magnam ducimus
           laudantium voluptatem earum! Temporibus rerum ut illo.
-        </p>
-      </article>
-      <article id="loremIpsum">
-        <p>
-         
         </p>
       </article>
     </main>
