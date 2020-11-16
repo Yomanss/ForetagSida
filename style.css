@@ -11,6 +11,14 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  color: var(--blueGreen);
+}
+
 html {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
@@ -38,6 +46,10 @@ h1 {
   color: var(--platinum);
 }
 
+.menu {
+  position: sticky;
+}
+
 .menu ul {
   display: flex;
   list-style: none;
@@ -51,7 +63,7 @@ h1 {
 
 .menu ul li a:hover {
   border-bottom: 5px solid;
-  transition: 400ms;
+  transition: 200ms;
   transition-timing-function: ease-out;
 }
 
@@ -82,8 +94,21 @@ main {
   grid-column: 2 / 5;
 }
 
-#suck {
-  width: 300px
+#valkommen section {
+  display: flex;
+}
+
+#valkommen section p {
+  width: 50vw;
+}
+
+#valkommenImg {
+  width: 16rem;
+  margin: 1rem;
+}
+
+#valkommenImg img {
+  width: 100%;
 }
 
 .bildgalleri {
@@ -95,4 +120,26 @@ main {
 
 .bildgalleri img {
   width: 100%;
+}
+
+footer {
+  grid-row: 4;
+  grid-column: 1 / 6;
+  background-color: var(--blueGreen);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footerP {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.bilder {
+  width: 500px;
+}
+
+.bilder span {
+  font-size: 0.8rem;
+  padding: 20px;
 }
