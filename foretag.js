@@ -1,17 +1,16 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+const slides = document.querySelector('.slides');
+const slideImages = document.querySelectorAll('.slides img');
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("slideImg");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
+let counter = 1;
+const size = slideImages[0].clientWidth;
+
+slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+nextBtn.addEventListener('click',()=>{
+    slides.style.transition = "transform 0.4s ease-in-out"
+    counter++;
+    slides.style.transform = 'translateX(' + (-size * counter) + 'px)';
+})
