@@ -1,5 +1,5 @@
 :root {
-  --mainColor: #52489c;
+  --mainColor: #52489c69;
   --platinum: #ebebeb;
   --trueBlue: #4062bb;
   --blueGreen: #59c3c3;
@@ -12,12 +12,12 @@
 }
 
 html {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Open Sans", sans-serif;
 }
 
 body {
-  background-color: #dadada;
+  background-color: var(--mainColor);
 }
 
 h1,
@@ -77,17 +77,16 @@ main {
   grid-template-columns: 10vw 1fr 1fr 1fr 10vw;
 }
 
-#valkommen {
-  padding: 0.5rem 0 0 0;
+article {
+  margin: 0.5rem 0 0 0;
+  padding: 0 1rem 1rem 1rem;
 }
 
 #valkommen section {
   display: flex;
-  background-color: whitesmoke;
 }
 
 #valkommen h2 {
-  background-color: whitesmoke;
   padding: 1rem 1rem 0rem 1rem;
 }
 
@@ -111,7 +110,7 @@ main {
 }
 
 .bildgalleri {
-  margin-top: 10vh;
+  margin: 2em 0;
   display: flex;
   width: 100%;
 }
@@ -121,27 +120,33 @@ main {
   padding: 0.4rem;
 }
 
-.bildgalleri img {
-  width: 100%;
+.bildgalleri p a {
+  color: black;
 }
 
-#text1 {
-  margin-top: 10vh;
-  padding: 0 1rem 1rem 1rem;
-  grid-column: 2 / 5;
-  grid-row: 4;
-  background-color: whitesmoke;
+.bildgalleri p a:hover {
+  color: #928080;
+}
+
+.bildgalleri img {
+  width: 100%;
 }
 
 footer {
   background-color: var(--blueGreen);
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .footerP {
   padding: 0.5rem;
   margin: 0.5rem;
+  color: var(--platinum);
+}
+
+.footerItem ul li a {
+  color: var(--platinum);
 }
 
 .bilder {
@@ -151,6 +156,28 @@ footer {
 .bilder span {
   font-size: 0.8rem;
   padding: 20px;
+}
+
+#kontaktText {
+  display: flex;
+}
+
+#kontaktNav {
+  margin-right: 10px;
+}
+
+#kontaktNav ul {
+  list-style: none;
+  text-align: center;
+}
+
+#kontaktNav ul li {
+  padding: 4px;
+}
+
+#kontaktNav ul li a {
+  text-decoration: none;
+  color: var(--trueBlue);
 }
 
 @media only screen and (max-width: 320px) {
@@ -221,12 +248,17 @@ footer {
   .bilder {
     width: 100%;
   }
-}
-@media only screen and (min-width: 1400px) {
-  html {
-    font-size: 24px;
+  
+  #kontaktText {
+    flex-direction: column-reverse;
   }
+}
 
+@media only screen and (max-width: 320px) {
+
+}
+
+@media only screen and (min-width: 1400px) {
   .bildgalleri {
     justify-content: space-evenly;
   }
