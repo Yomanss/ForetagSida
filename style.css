@@ -11,14 +11,6 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  width: 1rem;
-}
-
-::-webkit-scrollbar-track {
-  color: var(--blueGreen);
-}
-
 html {
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
@@ -75,6 +67,11 @@ h1 {
   border-bottom: 5px solid white;
 }
 
+.wrapper {
+  grid-column: 2/5;
+  background-color: whitesmoke;
+}
+
 main {
   display: grid;
   grid-template-columns: 10vw 1fr 1fr 1fr 10vw;
@@ -101,13 +98,13 @@ main {
 }
 
 #valkommenImg {
-  width: 30vw;
+  width: 20rem;
   margin-right: 1rem;
 }
 
 #valkommenImg span {
-  margin:  auto;
-  width: 10px;
+  margin-left: 5px;
+  font-size: 0.7rem;
 }
 
 #valkommenImg img {
@@ -115,15 +112,14 @@ main {
 }
 
 .bildgalleri {
-  grid-row: 3;
-  grid-column: 2 / 5;
+  margin-top: 10vh;
   display: flex;
   width: 100%;
 }
 
 .bildgalleri p {
-  background-color: violet;
-  padding: 0.2rem;
+  font-size: 0.7rem;
+  padding: 0.4rem;
 }
 
 .bildgalleri img {
@@ -131,6 +127,8 @@ main {
 }
 
 #text1 {
+  margin-top: 10vh;
+  padding: 0 1rem 1rem 1rem;
   grid-column: 2 / 5;
   grid-row: 4;
   background-color: whitesmoke;
@@ -175,7 +173,6 @@ footer {
 
   .menu ul li a {
     padding: 0em 0em;
-    font-size: 0.5rem;
   }
 
   .inactiveMenu a:hover {
@@ -192,12 +189,29 @@ footer {
     border-bottom: 5px solid white;
   }
 
+  .wrapper {
+    grid-column: 1 / 6;
+  }
+
+  #valkommen h2 {
+    text-align: center;
+  }
+
   #valkommen section {
     flex-direction: column-reverse;
+    margin-top: 10px;
+  }
+
+  #valkommen section p {
+    width: 100vw;
   }
 
   #valkommenImg {
     width: 100%;
     margin-right: 0;
+  }
+
+  #valkommenImg span {
+    text-align: center;
   }
 }
