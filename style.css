@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background-color: var(--platinum);
+  background-color: #dadada;
 }
 
 h1,
@@ -79,7 +79,6 @@ main {
 
 #valkommen {
   padding: 0.5rem 0 0 0;
-  grid-column: 2 / 5;
 }
 
 #valkommen section {
@@ -213,5 +212,22 @@ footer {
 
   #valkommenImg span {
     text-align: center;
+  }
+
+  .bildgalleri {
+    flex-direction: column;
+  }
+
+  .bilder {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  html {
+    font-size: 24px;
+  }
+
+  .bildgalleri {
+    justify-content: space-evenly;
   }
 }
