@@ -34,6 +34,7 @@ h2 {
 }
 
 header {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -46,26 +47,32 @@ h1 {
   color: var(--platinum);
 }
 
-.wrapper {
-  background-color: whitesmoke;
-  grid-column: 2/5;
-}
-
 .menu ul {
   display: flex;
   list-style: none;
 }
 
-.menu ul li a {
-  color: white;
-  text-decoration: none;
+.menu ul li {
   padding: 0.2em 0.8em;
 }
 
-.menu ul li a:hover {
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.inactiveMenu a:hover {
+  background-color: #3f9191;
+  padding: 5px;
   border-bottom: 5px solid;
-  transition: 200ms;
+  transition: 120ms;
   transition-timing-function: ease-out;
+}
+
+.activeMenu {
+  background-color: #3f9191;
+  padding: 5px;
+  border-bottom: 5px solid white;
 }
 
 main {
@@ -75,7 +82,6 @@ main {
 
 #valkommen {
   padding: 0.5rem 0 0 0;
-  grid-row: 1;
   grid-column: 2 / 5;
 }
 
@@ -95,12 +101,13 @@ main {
 }
 
 #valkommenImg {
-  width: 16rem;
-  margin: 1rem;
+  width: 30vw;
+  margin-right: 1rem;
 }
 
-#valkommenImg p {
-  justify-self: center;
+#valkommenImg span {
+  margin:  auto;
+  width: 10px;
 }
 
 #valkommenImg img {
@@ -125,12 +132,11 @@ main {
 
 #text1 {
   grid-column: 2 / 5;
+  grid-row: 4;
   background-color: whitesmoke;
 }
 
 footer {
-  grid-row: 4;
-  grid-column: 1 / 6;
   background-color: var(--blueGreen);
   display: flex;
   justify-content: space-evenly;
@@ -148,4 +154,50 @@ footer {
 .bilder span {
   font-size: 0.8rem;
   padding: 20px;
+}
+
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: none;
+  }
+  .menu ul {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .menu ul li a {
+    padding: 0em 0em;
+    font-size: 0.5rem;
+  }
+
+  .inactiveMenu a:hover {
+    background-color: #3f9191;
+    padding: 5px;
+    border-bottom: 5px solid;
+    transition: 120ms;
+    transition-timing-function: ease-out;
+  }
+  
+  .activeMenu {
+    background-color: #3f9191;
+    padding: 5px;
+    border-bottom: 5px solid white;
+  }
+
+  #valkommen section {
+    flex-direction: column-reverse;
+  }
+
+  #valkommenImg {
+    width: 100%;
+    margin-right: 0;
+  }
 }
