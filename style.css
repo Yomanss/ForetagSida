@@ -20,7 +20,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -46,8 +46,9 @@ h1 {
   color: var(--platinum);
 }
 
-.menu {
-  position: sticky;
+.wrapper {
+  background-color: whitesmoke;
+  grid-column: 2/5;
 }
 
 .menu ul {
@@ -70,41 +71,36 @@ h1 {
 main {
   display: grid;
   grid-template-columns: 10vw 1fr 1fr 1fr 10vw;
-  grid-template-rows: 25% 25% 25% 25%;
-}
-
-.slideshow {
-  grid-column: 2 / 5;
-  grid-row: 1;
-  width: 60%;
-  margin: auto;
-  border: 5px solid black;
-}
-
-.slides {
-  display: flex;
-  width: 100%;
-  height: 500px;
 }
 
 #valkommen {
-  background-color: whitesmoke;
-  padding: 1rem 0.5rem;
-  grid-row: 2;
+  padding: 0.5rem 0 0 0;
+  grid-row: 1;
   grid-column: 2 / 5;
 }
 
 #valkommen section {
   display: flex;
+  background-color: whitesmoke;
+}
+
+#valkommen h2 {
+  background-color: whitesmoke;
+  padding: 1rem 1rem 0rem 1rem;
 }
 
 #valkommen section p {
-  width: 50vw;
+  width: 58vw;
+  padding: 0rem 1rem 0.5rem 1rem;
 }
 
 #valkommenImg {
   width: 16rem;
   margin: 1rem;
+}
+
+#valkommenImg p {
+  justify-self: center;
 }
 
 #valkommenImg img {
@@ -118,8 +114,18 @@ main {
   width: 100%;
 }
 
+.bildgalleri p {
+  background-color: violet;
+  padding: 0.2rem;
+}
+
 .bildgalleri img {
   width: 100%;
+}
+
+#text1 {
+  grid-column: 2 / 5;
+  background-color: whitesmoke;
 }
 
 footer {
