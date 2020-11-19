@@ -120,7 +120,7 @@ article {
 }
 
 .bildgalleri p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   padding: 0.4rem;
 }
 
@@ -201,7 +201,7 @@ footer {
 
 .footerItem ul li a, .footerItem ul li {
   color: var(--platinum);
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .footerItem ul li:first-child {
@@ -210,7 +210,7 @@ footer {
 
 @media only screen and (max-width: 460px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   header {
@@ -275,6 +275,7 @@ footer {
 
   .bilder {
     width: 100%;
+    margin: 10px 0;
   }
 
   .textGrid {
@@ -292,5 +293,9 @@ footer {
 
   footer {
     flex-direction: column;
+  }
+
+  .footerItem ul li a, .footerItem ul li {
+    padding: 13px 0;
   }
 }
