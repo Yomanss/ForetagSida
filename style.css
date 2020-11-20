@@ -183,26 +183,41 @@ article {
   border-bottom: 2px dotted var(--blueGreen);
 }
 
+#bostadText {
+  justify-content: center;
+}
+
 .bostadAnnons {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: 2px dotted var(--trueBlue);
+  background-color: #fcf5e9d7;
+  box-shadow: 1px 1px 5px 1px black;
   padding: 1rem;
-  box-shadow: 2px 2px lightgray;
+  margin: 2rem;
   border-radius: 10px;
 }
 
 .annonsImg {
-  width: 50vw;
+  width: 25vw;
+  box-shadow: 1px 1px 2px black;
 }
 
 .annonsImg img {
+  display: block;
   width: 100%;
+}
+
+.annonsFakta > p {
+  padding: 5px 0;
+  border-bottom: 2px solid darkgray;
 }
 
 .annonsDesc ul {
   list-style: none;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
 }
 
 .annonsDesc ul li a {
