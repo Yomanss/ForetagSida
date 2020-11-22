@@ -462,6 +462,10 @@ footer {
   .bostadAnnons {
     font-size: 0.8rem;
   }
+
+  .kontaktH3 {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
