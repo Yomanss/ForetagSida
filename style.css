@@ -13,7 +13,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -245,7 +245,7 @@ article {
   align-items: center;
   border: 2px solid  #d1b786;
   border-radius: 20px;
-  background: wheat;
+  background: #fce6bfd7;
   padding: 1em;
   margin: 2rem auto;
   width: 75vw;
@@ -267,7 +267,7 @@ article {
 }
 
 .annonsText {
-  width: 75vw;
+  width: 85vw;
   margin: 0 auto;
 }
 
@@ -334,16 +334,53 @@ footer {
     align-items: center;
     border: 2px solid  #d1b786;
     border-radius: 20px;
-    background: wheat;
-    padding: 1em;
-    margin: 2rem auto;
-    width: 75vw;
+    width: 65vw;
   }
-}
 
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 18px;
+  #annonsB section ul, #annonsB section p {
+    margin-left: 0rem;
+  }
+
+  #annonsB section p {
+    margin-top: 1rem;
+  }
+
+  .annonsText {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .bildgalleri {
+    flex-direction: column;
+  }
+
+  .bilder {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #valkommen h2 {
+    text-align: center;
+  }
+
+  #valkommen section {
+    flex-direction: column-reverse;
+    margin-top: 10px;
+  }
+
+  #valkommen section p {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  #valkommenImg {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #valkommenImg span {
+    text-align: center;
   }
 
   header {
@@ -373,42 +410,15 @@ footer {
     padding: 5px;
     border-bottom: 5px solid white;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 18px;
+  }
 
   .wrapper {
     grid-column: 1 / 6;
-  }
-
-  #valkommen h2 {
-    text-align: center;
-  }
-
-  #valkommen section {
-    flex-direction: column-reverse;
-    margin-top: 10px;
-  }
-
-  #valkommen section p {
-    width: 100%;
-    padding: 0;
-    margin-top: 10px;
-  }
-
-  #valkommenImg {
-    width: 100%;
-    margin-right: 0;
-  }
-
-  #valkommenImg span {
-    text-align: center;
-  }
-
-  .bildgalleri {
-    flex-direction: column;
-  }
-
-  .bilder {
-    width: 100%;
-    margin: 10px 0;
   }
 
   .textGrid {
