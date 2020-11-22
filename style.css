@@ -236,7 +236,7 @@ article {
   margin: 10px 0;
 }
 
-#postadress p {
+#postadress p:last-child {
   margin-bottom: 2rem;
 }
 
@@ -261,7 +261,7 @@ article {
   width: 100%;
 }
 
-#annonsB div ul, #annonsB div h3 {
+#annonsB section ul, #annonsB section p {
   list-style: none;
   margin-left: 1rem;
 }
@@ -326,6 +326,18 @@ footer {
 
   .annonsImg {
     width: 50vw;
+  }
+
+  #annonsB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid  #d1b786;
+    border-radius: 20px;
+    background: wheat;
+    padding: 1em;
+    margin: 2rem auto;
+    width: 75vw;
   }
 }
 
