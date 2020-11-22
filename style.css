@@ -243,7 +243,7 @@ article {
 #annonsB {
   display: flex;
   align-items: center;
-  border: 2px solid  #d1b786;
+  border: 2px solid #d1b786;
   border-radius: 20px;
   background: #fce6bfd7;
   padding: 1em;
@@ -261,7 +261,8 @@ article {
   width: 100%;
 }
 
-#annonsB section ul, #annonsB section p {
+#annonsB section ul,
+#annonsB section p {
   list-style: none;
   margin-left: 1rem;
 }
@@ -318,36 +319,33 @@ footer {
   }
 }
 
-@media only screen and (max-width: 970px) {
-  .bostadAnnons {
-    flex-direction: column;
-    max-width: 60vw;
-  }
-
-  .annonsImg {
-    width: 50vw;
-  }
-
-  #annonsB {
+@media only screen and (max-width: 1024px) {
+  header {
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
-    align-items: center;
-    border: 2px solid  #d1b786;
-    border-radius: 20px;
-    width: 65vw;
+    align-items: none;
+  }
+  .menu ul {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
-  #annonsB section ul, #annonsB section p {
-    margin-left: 0rem;
+  .menu ul li a {
+    padding: 0em 0em;
   }
 
-  #annonsB section p {
-    margin-top: 1rem;
+  .inactiveMenu a:hover {
+    padding: 5px;
+    border-bottom: 5px solid;
+    transition: 120ms;
+    transition-timing-function: ease-out;
   }
 
-  .annonsText {
-    width: 100vw;
-    margin: 0 auto;
+  .activeMenu {
+    padding: 5px;
+    border-bottom: 5px solid white;
   }
 
   .bildgalleri {
@@ -383,32 +381,44 @@ footer {
     text-align: center;
   }
 
-  header {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+  .bostadAnnons {
+    max-width: 85vw;
+  }
+
+  .bostadAnnons section {
+    margin: 15px 0;
+  }
+
+  .bostadAnnons {
     flex-direction: column;
-    align-items: none;
-  }
-  .menu ul {
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    max-width: 60vw;
   }
 
-  .menu ul li a {
-    padding: 0em 0em;
+  .annonsImg {
+    width: 50vw;
   }
 
-  .inactiveMenu a:hover {
-    padding: 5px;
-    border-bottom: 5px solid;
-    transition: 120ms;
-    transition-timing-function: ease-out;
+  #annonsB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #d1b786;
+    border-radius: 20px;
+    width: 65vw;
   }
 
-  .activeMenu {
-    padding: 5px;
-    border-bottom: 5px solid white;
+  #annonsB section ul,
+  #annonsB section p {
+    margin-left: 0rem;
+  }
+
+  #annonsB section p {
+    margin-top: 1rem;
+  }
+
+  .annonsText {
+    width: 100vw;
+    margin: 0 auto;
   }
 }
 
@@ -432,14 +442,6 @@ footer {
 
   .sideNav ul {
     display: none;
-  }
-
-  .bostadAnnons {
-    max-width: 85vw;
-  }
-
-  .bostadAnnons section {
-    margin: 15px 0;
   }
 
   .annonsImg {
